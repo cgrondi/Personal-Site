@@ -16,7 +16,7 @@ const projects = [
     demoURL:'#'
   },
   {
-    imgURL:'#',
+    imgURL:'https://knowpathology.com.au/app/uploads/2018/07/Happy-Test-Screen-01.png',
     title:'TESTING',
     description:'A SECOND PROJECT THAT DOES NOT EXIST TO TEST THE FOREACH FUNCTION IN PORTFOLIO.EJS. DELETE AFTER TESTING.',
     codeURL:'#',

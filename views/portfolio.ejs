@@ -1,5 +1,5 @@
 <%- include("partials/header"); -%>
-<h1>Portfolio</h1>
+<h1 class="page-title">Portfolio</h1>
 
 <% projects.forEach(function(project){ %>
 
@@ -9,11 +9,11 @@
     <img src=<%= project.imgURL %> alt=<%= project.title+'image' %>>
     <h3><%= project.title %></h3>
     <p><%= project.description %></p>
-    <div class="projectLinks">
+    <div class="project-links">
       <a href=<%= project.codeURL %>>Code</a> <a href=<%= project.demoURL %>>Demo</a>
     </div>
   </div>
-  <div class="gradient-border" id='borderBox'>
+  <div class="gradient-border" id='border-box'>
 
   </div>
   <br>

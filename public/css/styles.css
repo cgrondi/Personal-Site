@@ -2,11 +2,54 @@
 body{
   background-color: #1D1F20;
   color: white;
+
+  font-family: 'Raleway';
 }
-.navbar{
-  background-color: #1D1F20;
-  border: none;
+
+/******  Reuseables  ******/
+.page-title{
+  margin-left: 28%;
+  margin-bottom: 5%;
 }
+
+/*****  My navbar  *****/
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+li{
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.my-navbar{
+  display: inline-block;
+  width: 100%;
+}
+.home-nav{
+  font-size: 1.3em;
+  margin-right: 21%;
+  margin-left: 23%
+}
+
+/*****  header and footer  ******/
+.page-container{
+  flex:1;
+  display: flex;
+  flex-direction: column;
+}
+.footer-padding{
+  margin: 20px 0 10px 0;
+  align-self: center;
+}
+
+
 
 /*****  index.ejs  *****/
 .root{
@@ -14,20 +57,13 @@ body{
   flex: 1;
   min-height: 100vh;
 }
-.pageContainer{
-  flex:1;
-  display: flex;
-  flex-direction: column;
-}
-.contentContainer{
+
+.content-container{
   flex:2;
 }
-.footer-padding{
-  margin: 20px 0 10px 0;
-  align-self: center;
-}
 
-.homePageText p{
+
+.home-page-text p{
   position: absolute;
   font-size: 2em;
   line-height: 2;
@@ -35,7 +71,7 @@ body{
   width: 40%;
   margin-top: 2%;
 }
-.homePageText a{
+.home-page-text a{
   text-decoration: none;
   cursor: pointer;
 }
@@ -45,20 +81,23 @@ body{
   width: 30%;
   margin-right: auto;
   margin-left: auto;
-font-family: 'Raleway';
   padding-bottom: 2%;
-}
-#borderBox{
-  width: 40%;
-  margin-left: auto;
-  margin-right: auto;
 }
 .project img{
   width: 90%;
   height: 65%
 }
+.project-links a{
+  padding-right: 2%;
+}
 
 
+/*****  gradient border  ******/
+#border-box{
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
 .gradient-border {
 
   background: #1D1F20;
@@ -78,8 +117,6 @@ font-family: 'Raleway';
   animation: animatedgradient 3s ease alternate infinite;
   background-size: 300% 300%;
 }
-
-
 @keyframes animatedgradient {
 	0% {
 		background-position: 0 50%;
