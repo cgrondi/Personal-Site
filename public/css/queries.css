@@ -1,0 +1,61 @@
+@media only screen and (max-width: 767px) {
+  /* .home-nav{
+    margin-right: 10%;
+    margin-left: 12%;
+  }
+  .project-image{
+    width: 50%;
+  }
+  .project{
+    width: 50%;
+  }
+  #border-box{
+    width: 65%;
+  }
+  .about-me-text{
+    width:50%;
+  }
+  .home-page-text{
+    left:30%;
+    width:50%;
+  }
+
+  .collapse-button{
+    float: left;
+    color: rgba(255,255,255,0.3);
+  }
+  .collapse-button:hover{
+    float: left;
+    color: rgb(255,255,255);
+  } */
+
+}
+@media only screen and (max-width: 1000px) {
+  .home-nav{
+    margin-left: 0;
+  }
+  .hide-menu{
+
+    height: 0vh;
+
+  }
+  .show-menu{
+    height: 116px;
+  }
+  .my-navbar-nav{
+    position : relative;
+    background-color: #333333;
+    width: 37%;
+    margin-left: 28%;
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+    transition: all 500ms ease;
+  }
+  .my-nav-item{
+    float: none;
+    font-size: 1.2em;
+  }
+  .collapse-button{
+    display: inline-block;
+  }
+}

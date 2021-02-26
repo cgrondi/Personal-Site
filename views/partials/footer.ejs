@@ -7,5 +7,15 @@
     </div> <!-- footer-padding -->
   </div> <!-- pageContainer -->
 </div> <!-- root -->
+<!-- footer -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.collapse-button').click(function(){
+      $('#main-navigation').toggleClass('show-menu hide-menu');
+      $('.collapse-button').toggleClass('round-button round-top-button')
+    })
+  });
+</script>
 </body>
 </html>

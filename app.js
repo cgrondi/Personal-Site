@@ -13,7 +13,14 @@ const projects = [
     title:'Note-Taker',
     description:'A web app that allows the user to write notes down. Built using React.js',
     codeURL:'https://github.com/cgrondi/Note-Taker',
-    demoURL:'#'
+    demoURL:'http://dry-beyond-70649.herokuapp.com/'
+  },
+  {
+    imgURL:"/images/MonkeyGame.png",
+    title:'Monkey Game',
+    description:'A simple game in which a player can guide a monkey to bananas inspired by liquid crystal games such as Game and Watch. Made using jquery.',
+    codeURL:'https://github.com/cgrondi/Monkey-Game',
+    demoURL:'https://cgrondi.github.io/Monkey-Game/'
   },
   {
     imgURL:'https://knowpathology.com.au/app/uploads/2018/07/Happy-Test-Screen-01.png',
@@ -34,7 +41,7 @@ app.get('/portfolio', function(req,res){
 });
 app.get('/about', function(req,res){
   //temporarily until I create the about page
-  res.redirect('/');
+  res.render('about');
 });
 
 app.listen(3000,function(){

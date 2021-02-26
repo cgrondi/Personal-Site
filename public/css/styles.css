@@ -6,6 +6,7 @@ body{
   font-family: 'Raleway';
 }
 
+
 /******  Reuseables  ******/
 .page-title{
   margin-left: 28%;
@@ -13,19 +14,11 @@ body{
 }
 
 /*****  My navbar  *****/
-ul{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-li{
-  float: left;
-}
-li a {
-  display: block;
+
+
+
+a:hover{
   color: white;
-  text-align: center;
-  padding: 14px 16px;
   text-decoration: none;
 }
 .my-navbar{
@@ -33,9 +26,40 @@ li a {
   width: 100%;
 }
 .home-nav{
-  font-size: 1.3em;
-  margin-right: 21%;
-  margin-left: 23%
+  display: inline-block;
+  font-size: 2em;
+  margin-top: 2%;
+  margin-left: 22%;
+  text-decoration: none;
+  color: white;
+}
+.my-navbar-nav{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 5%;
+  right: 24%;
+}
+.collapse-button{
+  display: none;
+}
+.round-button{
+  border-radius: 10%;
+}
+.round-top-button{
+  border-radius: 10% 10% 0 0;
+}
+.my-nav-item{
+  float:left;
+  list-style: none;
+}
+.my-nav-item a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
 /*****  header and footer  ******/
@@ -68,7 +92,7 @@ li a {
   font-size: 2em;
   line-height: 2;
   left: 30%;
-  width: 40%;
+  width: 38%;
   margin-top: 2%;
 }
 .home-page-text a{
@@ -79,16 +103,79 @@ li a {
 /*****  portfolio.ejs  *****/
 .project{
   width: 30%;
+  height: 100%;
   margin-right: auto;
   margin-left: auto;
   padding-bottom: 2%;
 }
-.project img{
-  width: 90%;
-  height: 65%
+.project-image {
+  width: 30%;
+  height: 15%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.project p{
+  font-size: 1.2em;
+}
+.project-links{
+  padding-bottom: 2%;
 }
 .project-links a{
   padding-right: 2%;
+  font-size: 1.1em;
+}
+
+/*****  about.ejs  *****/
+.about-me-text{
+  width: 30%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 2%;
+  font-size: 1.75em;
+  line-height: 1.5em;
+}
+
+/*****  Collapsible nav bar  *****/
+/* .fa, .fas{
+  font-weight: 900;
+  margin-top: 1%;
+  margin-left: 4%;
+  padding: 1%;
+  font-size: 2rem;
+  background-color: #333333;
+  border-radius: 10%;
+} */
+button {
+  border-style: none;
+    display: inline-block;
+    border-radius: 10%;
+    padding: 1% 2%;
+    margin-top:1%;
+    margin-left: 4%;
+    text-decoration: none;
+    background: #333333;
+    font-size: 2rem;
+    cursor: pointer;
+    text-align: center;
+    transition: background 250ms ease-in-out,
+                transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+button:hover,
+button:focus {
+    background: #555555;
+}
+
+button:focus {
+    outline: none;
+    outline-offset: -4px;
+}
+
+button:active {
+    transform: scale(0.99);
 }
 
 
