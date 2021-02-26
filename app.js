@@ -21,13 +21,6 @@ const projects = [
     description:'A simple game in which a player can guide a monkey to bananas inspired by liquid crystal games such as Game and Watch. Made using jquery.',
     codeURL:'https://github.com/cgrondi/Monkey-Game',
     demoURL:'https://cgrondi.github.io/Monkey-Game/'
-  },
-  {
-    imgURL:'https://knowpathology.com.au/app/uploads/2018/07/Happy-Test-Screen-01.png',
-    title:'TESTING',
-    description:'A SECOND PROJECT THAT DOES NOT EXIST TO TEST THE FOREACH FUNCTION IN PORTFOLIO.EJS. DELETE AFTER TESTING.',
-    codeURL:'#',
-    demoURL:'#'
   }
 ];
 
@@ -44,6 +37,6 @@ app.get('/about', function(req,res){
   res.render('about');
 });
 
-app.listen(3000,function(){
+app.listen(process.env.PORT || 3000,function(){
   console.log('Server running on port 3000');
 });
