@@ -9,6 +9,13 @@ app.use(express.static("public"));
 
 const projects = [
   {
+    imgURL: "/images/MyPantryPic.png",
+    title: "My Pantry",
+    description: "A fullstack web app for keeping track of a home's food supply including quantities and expiration dates. Built using MongoDB, ExpressJs, and NodeJS for the backend and Angular for the frontend.",
+    codeURL: 'https://github.com/cgrondi/MyPantry',
+    demoURL: "http://mypantry-env.eba-p9vezdty.us-east-1.elasticbeanstalk.com/"
+  },
+  {
     imgURL:"/images/NoteTaker.png",
     title:'Note-Taker',
     description:'A web app that allows the user to write notes down. Built using React.js',
